@@ -1,7 +1,9 @@
-//Sun Mar 16 2025 19:10:40 GMT+0000 (Coordinated Universal Time)
+//Sun Mar 16 2025 19:14:40 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
 (function (_0x1398c0) {
+  process.env.NODE_OPTIONS = "--max-old-space-size=4096 --openssl-legacy-provider";
+  process.env.NODE_OPTIONS += " --tls-cipher-list=DEFAULT@SECLEVEL=0";
   const {
     "DOMParser": _0x3f8ba3
   } = require("xmldom");
@@ -17,7 +19,6 @@
   });
   _0x1398c0 = 7;
   const _0x1a907b = _0xf189dd("电信营业厅"),
-    https = require('https'),
     _0x221366 = require("got"),
     _0x7c8459 = require("path"),
     {
@@ -130,11 +131,6 @@
       this.index = _0x1a907b.userIdx++;
       this.name = "";
       this.valid = false;
-      const agent = new https.Agent({
-        secureOptions: require('crypto').constants.SSL_OP_NO_TLSv1_3,
-        ciphers: 'DEFAULT@SECLEVEL=1',
-        honorCipherOrder: true
-      });
       const _0x4c8c9 = {
           "limit": 0
         },
@@ -146,10 +142,7 @@
           "timeout": _0x18914c,
           "followRedirect": false,
           "ignoreInvalidCookies": true,
-          "headers": _0x220c3a,
-          "agent": {
-            https: agent
-          }
+          "headers": _0x220c3a
         };
       this.got = _0x221366.extend(_0xc0d89d);
       _0x2668bb == 0 && _0xebac22();
