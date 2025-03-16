@@ -1,27 +1,3 @@
-// /**
-//  * 任务名称
-//  * name: script name
-//  * 定时规则
-//  * cron: 1 9 * * *
-//  */
-// console.log('test scripts');
-// QLAPI.notify('test scripts', 'test desc');
-// console.log('test desc');
-/*电信营业厅 v6.02
-
-签到和完成部分金豆任务, 喂宠物
-7天,15天,28天连签抽奖, 宠物等级权益兑换
-
-自己设置电信的服务密码, 把 手机号#服务密码 填到变量里, 多账号换行或&或@隔开:
-export chinaTelecomAccount="138000000#111111"
-
-每天运行多次
-
-
-cron: 5 0,6,12,20 * * *
-const $ = new Env("电信营业厅并发");
-*/
-
 (function (_0x1398c0) {
   const {
     "DOMParser": _0x3f8ba3
